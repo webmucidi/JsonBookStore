@@ -1,0 +1,38 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  .books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .book-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .book-card img {
+    max-width: 100%;
+  }
+  
+  .book-card h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .book-card p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
