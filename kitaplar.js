@@ -4,7 +4,7 @@ async function kitapListele() {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "apikey 4dt29quqTUIne0aMPOL4DL:0l849tJwAWlI1Wy5PlP05N"
+        "Authorization": "senin api keyin"
       }
     };
   
