@@ -11,8 +11,6 @@ let sunucuYaniti;
 let kitaplar;
 
 async function kitapListele() {
-
-  
     try {
       sunucuYaniti = await fetch(kaynakUrl, baglantiAyarlari);
       kitaplar = await sunucuYaniti.json();
@@ -31,6 +29,10 @@ async function kitapListele() {
         const kitapKapak=document.createElement("img");
         kitapKapak.src=kitap.image;
         kitapKarti.appendChild(kitapKapak);
+
+        const kitapLink=document.createElement("a");
+        kitapKapak.href=kitap.url;
+        kitapKarti.appendChild(kitapLink); 
 
 
       });
@@ -72,6 +74,10 @@ document.getElementById("filterButton").addEventListener("click",()=>{
         const kitapKapak=document.createElement("img");
         kitapKapak.src=kitap.image;
         kitapKarti.appendChild(kitapKapak);
+
+        const kitapLink=document.createElement("a");
+        kitapKapak.href=kitap.url;
+        kitapKarti.appendChild(kitapLink);   
 
       });
     } 
